@@ -1,7 +1,0 @@
-#host-dev
-
-[webservers]
-[loadbalancers]
-
-[local]
-control

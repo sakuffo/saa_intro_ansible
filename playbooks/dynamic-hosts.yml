@@ -1,0 +1,6 @@
+# ping.yml
+---
+  - hosts: tag_layer_web:tag_layer_alb
+    tasks:
+      - name: Pinging all servers
+        action: ping

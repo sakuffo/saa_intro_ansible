@@ -1,7 +1,7 @@
 # install-services.yml
 
 ---
-  - hosts: webservers:loadbalancers
+  - hosts: tag_layer_alb
     become: true
     tasks:
       - name: installing apache
@@ -9,7 +9,7 @@
       - name: Ensure apache starts
         service: name=httpd state=started enabled=yes
 
-  - hosts: webservers
+  - hosts: tag_layer_web
     become: true
     tasks:
       - name: installing apache

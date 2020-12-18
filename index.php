@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Ansible Page</h1>
+
 <?php
-    echo "<h1>Hello World! This is my Ansible page.</h1>"
+echo "Hello World!";
 ?>
+
+</body>
+</html>

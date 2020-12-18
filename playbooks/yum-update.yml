@@ -1,7 +1,7 @@
 # yum-update.yml
 
 ---
-  - hosts: webservers:loadbalancers
+  - hosts: tag_layer_web:tag_layer_alb
     become: true
     tasks:
       - name: Updating yum packages

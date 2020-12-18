@@ -1,6 +1,6 @@
 # setup-app.yml
 ---  
-  - hosts: webservers
+  - hosts: tag_layer_web
     become: true
     tasks:
       - name: Upload Application file

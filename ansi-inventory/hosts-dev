@@ -1,3 +1,4 @@
 # hosts-dev
+
 [local]
 control ansible_connection=local

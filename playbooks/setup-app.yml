@@ -9,6 +9,11 @@
           dest: /var/www/html
           mode: 0755
         notify: restart apache
+      
+      - name: Create simple info page
+        copy:
+          dest: /var/www/html/info.php
+          content: "<h1></h1>"
           
       - name: Configure php.ini file
         lineinfile:

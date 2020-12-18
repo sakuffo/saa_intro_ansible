@@ -1,0 +1,10 @@
+# setup-app.yml
+---  
+  - hosts: webservers
+    become: true
+    tasks:
+      - name: Upload Application file
+        copy:
+          src: ../index.php
+          dest: /var/www/html
+          mode: 0755

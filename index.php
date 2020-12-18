@@ -2,10 +2,10 @@
 <html>
 <body>
 
-<h1>My Ansible Page</h1>
 
-<?php
-echo "Hello World!";
+<?
+    echo "<h1>My Ansible Page</h1>";
+    echo "<h2>Hello World!</h2>";
 ?>
 
 </body>

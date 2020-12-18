@@ -67,3 +67,7 @@ keyed_groups:
     prefix: layer
   - key: Name
     prefix: Name
+  - key: ip_address
+    prefix: aws_ip_address
+  - key: ip-address
+    prefix: aws_ip_address

@@ -1,0 +1,486 @@
+{
+    "_meta": {
+        "hostvars": {
+            "control": {
+                "ansible_connection": "local"
+            },
+            "ec2-18-207-90-2.compute-1.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2020-12-18T03:49:21+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-0d965e9a483f82172"
+                        }
+                    }
+                ],
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "saa-a-LnEc2-1UVDCSTCG2IFD",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 1
+                },
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "image_id": "ami-0ff8a91507f77f867",
+                "instance_id": "i-06f4dbb5a2b487bd8",
+                "instance_type": "t2.micro",
+                "key_name": "saa-ansi-key",
+                "launch_time": "2020-12-18T03:49:20+00:00",
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_put_response_hop_limit": 1,
+                    "http_tokens": "optional",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "386179691158",
+                            "public_dns_name": "ec2-18-207-90-2.compute-1.amazonaws.com",
+                            "public_ip": "18.207.90.2"
+                        },
+                        "attachment": {
+                            "attach_time": "2020-12-18T03:49:20+00:00",
+                            "attachment_id": "eni-attach-0a848995da59b640f",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-040751836e94a8cc2",
+                                "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "0a:b0:96:c0:01:f1",
+                        "network_interface_id": "eni-03e5fa020e7bc9a18",
+                        "owner_id": "386179691158",
+                        "private_dns_name": "ip-172-31-19-222.ec2.internal",
+                        "private_ip_address": "172.31.19.222",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "386179691158",
+                                    "public_dns_name": "ec2-18-207-90-2.compute-1.amazonaws.com",
+                                    "public_ip": "18.207.90.2"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-19-222.ec2.internal",
+                                "private_ip_address": "172.31.19.222"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-03734eeb8f9d02fe9",
+                        "vpc_id": "vpc-04c65b4f97ab9e8a0"
+                    }
+                ],
+                "owner_id": "386179691158",
+                "placement": {
+                    "availability_zone": "us-east-1d",
+                    "group_name": "",
+                    "region": "us-east-1",
+                    "tenancy": "default"
+                },
+                "private_dns_name": "ip-172-31-19-222.ec2.internal",
+                "private_ip_address": "172.31.19.222",
+                "product_codes": [],
+                "public_dns_name": "ec2-18-207-90-2.compute-1.amazonaws.com",
+                "public_ip_address": "18.207.90.2",
+                "requester_id": "043234062703",
+                "reservation_id": "r-0a024dd161dda2793",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-040751836e94a8cc2",
+                        "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-03734eeb8f9d02fe9",
+                "tags": {
+                    "Name": "saa-ansi-load-balancer",
+                    "aws:cloudformation:logical-id": "LnEc2InstanceLoadBalancer",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:386179691158:stack/saa-ansi/fa560f70-40e3-11eb-9b07-127635505527",
+                    "aws:cloudformation:stack-name": "saa-ansi",
+                    "layer": "alb"
+                },
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-04c65b4f97ab9e8a0"
+            },
+            "ec2-54-159-141-61.compute-1.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2020-12-18T03:49:21+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-04b3a505ecdd37233"
+                        }
+                    }
+                ],
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "saa-a-LnEc2-1V8J2SY4F3FWK",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 1
+                },
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "image_id": "ami-0ff8a91507f77f867",
+                "instance_id": "i-0f7f8154ac36183bc",
+                "instance_type": "t2.micro",
+                "key_name": "saa-ansi-key",
+                "launch_time": "2020-12-18T03:49:20+00:00",
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_put_response_hop_limit": 1,
+                    "http_tokens": "optional",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "386179691158",
+                            "public_dns_name": "ec2-54-159-141-61.compute-1.amazonaws.com",
+                            "public_ip": "54.159.141.61"
+                        },
+                        "attachment": {
+                            "attach_time": "2020-12-18T03:49:20+00:00",
+                            "attachment_id": "eni-attach-0feb53849384e8697",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-040751836e94a8cc2",
+                                "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "0a:23:a5:d7:ef:b7",
+                        "network_interface_id": "eni-0b5cfa6e3ab787ba2",
+                        "owner_id": "386179691158",
+                        "private_dns_name": "ip-172-31-28-4.ec2.internal",
+                        "private_ip_address": "172.31.28.4",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "386179691158",
+                                    "public_dns_name": "ec2-54-159-141-61.compute-1.amazonaws.com",
+                                    "public_ip": "54.159.141.61"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-28-4.ec2.internal",
+                                "private_ip_address": "172.31.28.4"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-03734eeb8f9d02fe9",
+                        "vpc_id": "vpc-04c65b4f97ab9e8a0"
+                    }
+                ],
+                "owner_id": "386179691158",
+                "placement": {
+                    "availability_zone": "us-east-1d",
+                    "group_name": "",
+                    "region": "us-east-1",
+                    "tenancy": "default"
+                },
+                "private_dns_name": "ip-172-31-28-4.ec2.internal",
+                "private_ip_address": "172.31.28.4",
+                "product_codes": [],
+                "public_dns_name": "ec2-54-159-141-61.compute-1.amazonaws.com",
+                "public_ip_address": "54.159.141.61",
+                "requester_id": "043234062703",
+                "reservation_id": "r-0a99ebb536821f558",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-040751836e94a8cc2",
+                        "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-03734eeb8f9d02fe9",
+                "tags": {
+                    "Name": "saa-ansi-webserver-2",
+                    "aws:cloudformation:logical-id": "LnEc2InstanceWebServer2",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:386179691158:stack/saa-ansi/fa560f70-40e3-11eb-9b07-127635505527",
+                    "aws:cloudformation:stack-name": "saa-ansi",
+                    "layer": "web"
+                },
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-04c65b4f97ab9e8a0"
+            },
+            "ec2-54-226-238-194.compute-1.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2020-12-18T03:49:21+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-05539656b53f1b604"
+                        }
+                    }
+                ],
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "saa-a-LnEc2-TJ0K7BALEP0R",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 1
+                },
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "image_id": "ami-0ff8a91507f77f867",
+                "instance_id": "i-0f614ea0eeaff7431",
+                "instance_type": "t2.micro",
+                "key_name": "saa-ansi-key",
+                "launch_time": "2020-12-18T03:49:20+00:00",
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_put_response_hop_limit": 1,
+                    "http_tokens": "optional",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "386179691158",
+                            "public_dns_name": "ec2-54-226-238-194.compute-1.amazonaws.com",
+                            "public_ip": "54.226.238.194"
+                        },
+                        "attachment": {
+                            "attach_time": "2020-12-18T03:49:20+00:00",
+                            "attachment_id": "eni-attach-0bad5792c128da20e",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-040751836e94a8cc2",
+                                "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "0a:5f:84:b5:6c:2b",
+                        "network_interface_id": "eni-099922d5ddc546f26",
+                        "owner_id": "386179691158",
+                        "private_dns_name": "ip-172-31-18-222.ec2.internal",
+                        "private_ip_address": "172.31.18.222",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "386179691158",
+                                    "public_dns_name": "ec2-54-226-238-194.compute-1.amazonaws.com",
+                                    "public_ip": "54.226.238.194"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-18-222.ec2.internal",
+                                "private_ip_address": "172.31.18.222"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-03734eeb8f9d02fe9",
+                        "vpc_id": "vpc-04c65b4f97ab9e8a0"
+                    }
+                ],
+                "owner_id": "386179691158",
+                "placement": {
+                    "availability_zone": "us-east-1d",
+                    "group_name": "",
+                    "region": "us-east-1",
+                    "tenancy": "default"
+                },
+                "private_dns_name": "ip-172-31-18-222.ec2.internal",
+                "private_ip_address": "172.31.18.222",
+                "product_codes": [],
+                "public_dns_name": "ec2-54-226-238-194.compute-1.amazonaws.com",
+                "public_ip_address": "54.226.238.194",
+                "requester_id": "043234062703",
+                "reservation_id": "r-07ac20dd71ded492c",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-040751836e94a8cc2",
+                        "group_name": "saa-ansi-LnSecurityGroup-KDP2VSCFQOWY"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-03734eeb8f9d02fe9",
+                "tags": {
+                    "Name": "saa-ansi-webserver-1",
+                    "aws:cloudformation:logical-id": "LnEc2InstanceWebServer1",
+                    "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:386179691158:stack/saa-ansi/fa560f70-40e3-11eb-9b07-127635505527",
+                    "aws:cloudformation:stack-name": "saa-ansi",
+                    "layer": "web"
+                },
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-04c65b4f97ab9e8a0"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "aws_ec2",
+            "local",
+            "tag_Name_saa_ansi_load_balancer",
+            "tag_Name_saa_ansi_webserver_1",
+            "tag_Name_saa_ansi_webserver_2",
+            "tag_aws_cloudformation_logical_id_LnEc2InstanceLoadBalancer",
+            "tag_aws_cloudformation_logical_id_LnEc2InstanceWebServer1",
+            "tag_aws_cloudformation_logical_id_LnEc2InstanceWebServer2",
+            "tag_aws_cloudformation_stack_id_arn_aws_cloudformation_us_east_1_386179691158_stack_saa_ansi_fa560f70_40e3_11eb_9b07_127635505527",
+            "tag_aws_cloudformation_stack_name_saa_ansi",
+            "tag_layer_alb",
+            "tag_layer_web",
+            "ungrouped"
+        ]
+    },
+    "aws_ec2": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com",
+            "ec2-54-159-141-61.compute-1.amazonaws.com",
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    },
+    "local": {
+        "hosts": [
+            "control"
+        ]
+    },
+    "tag_Name_saa_ansi_load_balancer": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_Name_saa_ansi_webserver_1": {
+        "hosts": [
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_Name_saa_ansi_webserver_2": {
+        "hosts": [
+            "ec2-54-159-141-61.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_aws_cloudformation_logical_id_LnEc2InstanceLoadBalancer": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_aws_cloudformation_logical_id_LnEc2InstanceWebServer1": {
+        "hosts": [
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_aws_cloudformation_logical_id_LnEc2InstanceWebServer2": {
+        "hosts": [
+            "ec2-54-159-141-61.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_aws_cloudformation_stack_id_arn_aws_cloudformation_us_east_1_386179691158_stack_saa_ansi_fa560f70_40e3_11eb_9b07_127635505527": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com",
+            "ec2-54-159-141-61.compute-1.amazonaws.com",
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_aws_cloudformation_stack_name_saa_ansi": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com",
+            "ec2-54-159-141-61.compute-1.amazonaws.com",
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_layer_alb": {
+        "hosts": [
+            "ec2-18-207-90-2.compute-1.amazonaws.com"
+        ]
+    },
+    "tag_layer_web": {
+        "hosts": [
+            "ec2-54-159-141-61.compute-1.amazonaws.com",
+            "ec2-54-226-238-194.compute-1.amazonaws.com"
+        ]
+    }
+}

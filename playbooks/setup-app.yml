@@ -13,15 +13,18 @@
           dest: "{{ path_to_app }}"
           mode: 0755
         notify: restart apache
+        tags: upload
       
       - name: Create simple info page
         copy:
           dest: "{{ path_to_app }}/info.php"
-          content: "<h1>Info about our webserver {{ ansible_hostname }} </h1>"
+          content: "<h1>Info about our webserver {{ ansible_hostname }}.</h1>"
+        tags: create
 
       - name: See directory contents
         command: ls -la {{ path_to_app }}
         register: dir_contents
+        changed_when: false
 
       - name : Debug directory contents
         debug:

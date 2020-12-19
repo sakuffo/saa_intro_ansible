@@ -5,3 +5,13 @@
     tasks:
       - name: Check status of apache
         command: service httpd status
+        args:
+          warn: no
+        changed_when: false
+      
+      # - name: This is not a fail
+      #   command: /bin/false
+      #   ignore_errors: yes
+      #   changed_when: false
+
+        
